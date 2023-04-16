@@ -11,7 +11,12 @@
     p {
       padding:0 15px;
     }
-
+img{
+  border-radius: 20px;
+  @media @phone {
+    max-width: 100%;
+  }
+}
   }
 
   .music-images {
@@ -24,6 +29,16 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+    }
+
+    @media @phone {
+      .ondas,
+      .tecnologia {
+        display: none;
+      }
+      .auricular{
+        width: 100%;
+      }
     }
   }
 
@@ -58,6 +73,7 @@
       }
 
       .btn {
+        .btnRegistro(@btn-bg-color, @wild-sand)
       }
     }
 
